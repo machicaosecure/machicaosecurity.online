@@ -2,181 +2,179 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Machicao Security Consulting</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Machicao Security Consulting</title>
+  <link rel="icon" href="logo.png">
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f4f6f8;
-      color: #222;
-    }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family: 'Arial', sans-serif; line-height:1.6; background:#f4f6f8; color:#222; }
+
+    /* Cabecera */
     header {
-      background: #0b1f3a;
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
+      background:#0b1f3a; color:white;
+      display:flex; align-items:center; justify-content:space-between;
+      padding:20px 40px; flex-wrap:wrap;
     }
-    section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
+    header img { height:60px; }
+
+    nav { display:flex; gap:20px; flex-wrap:wrap; }
+    nav a { color:white; text-decoration:none; font-weight:bold; transition:0.3s; }
+    nav a:hover { color:#f4b400; }
+
+    /* Hero */
+    .hero {
+      text-align:center; padding:80px 20px; background:#e8eef7;
     }
-    h1, h2 {
-      color: #0b1f3a;
+    .hero h1 { font-size:2.5em; color:#0b1f3a; margin-bottom:20px; }
+    .hero p { font-size:1.2em; max-width:800px; margin:auto; color:#333; }
+
+    section { padding:60px 20px; max-width:1000px; margin:auto; }
+
+    h2 { text-align:center; color:#0b1f3a; margin-bottom:30px; }
+
+    .cards { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; }
+
+    .card {
+      background:white; padding:20px; border-radius:10px; width:320px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.1); transition:0.3s;
     }
-    .servicio {
-      background: white;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    .card:hover { transform:translateY(-5px); box-shadow:0 8px 15px rgba(0,0,0,0.15); }
+    .card h3 { color:#0b1f3a; margin-bottom:10px; }
+    .card ul { list-style:disc inside; margin-top:10px; line-height:1.4; }
+
+    /* Contacto */
+    .contact { text-align:center; }
+    .contact a {
+      display:inline-block; margin-top:15px; background:#0b1f3a; color:white;
+      padding:10px 20px; border-radius:5px; text-decoration:none; font-weight:bold;
+      transition:0.3s;
     }
-    footer {
-      background: #0b1f3a;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
+    .contact a:hover { background:#f4b400; color:#0b1f3a; }
+
+    footer { background:#0b1f3a; color:white; text-align:center; padding:20px; font-size:14px; }
+
+    /* WhatsApp flotante */
+    .whatsapp {
+      position:fixed; bottom:20px; right:20px;
+      background:#25d366; color:white; border-radius:50%;
+      width:60px; height:60px; display:flex; align-items:center; justify-content:center;
+      font-size:30px; text-decoration:none; box-shadow:0 4px 10px rgba(0,0,0,0.3); z-index:100;
     }
+    .whatsapp:hover { transform:scale(1.1); }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>Machicao Security Consulting</h1>
-  <p>Gobernanza · Ciberseguridad · Protección Digital</p>
+  <img src="logo.png" alt="Machicao Security Consulting">
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#quienes">Quiénes somos</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
 </header>
 
-<section>
-  <h2>¿Quiénes somos?</h2>
-  <p>
-    MACHICAO SECURITY CONSULTING
-    Somos una firma especializada en Seguridad de la Información, Gestión de Riesgos 
-    y Cumplimiento Normativo, orientada a acompañar a las organizaciones en la protección 
-    de su información y la toma de decisiones estratégicas basadas en riesgo.
-    
-    Contamos con experiencia en auditorías, diagnósticos, implementación y acompañamiento estratégico, 
-    trabajando bajo estándares internacionales como ISO/IEC 27001, ISO/IEC 27002 e ISO 31000, así 
-    como regulaciones locales ASFI y APS.
-
-    Nuestro enfoque combina:
-    - Visión ejecutiva.
-    - Rigor técnico.
-    - Recomendaciones prácticas y realistas alineadas a estándares internacionales ISO 27001/27002 ISO 31000
-    - Acompañamos a empresas del sector financiero, asegurador y corporativo, actuando como socios estratégicos
-    en seguridad, no solo como proveedores.
-  </p>
+<section class="hero" id="inicio">
+  <h1>Machicao Security Consulting</h1>
+  <p>Gobernanza · Ciberseguridad · Protección Digital<br>Protegemos tu información crítica y ayudamos a tomar decisiones estratégicas basadas en riesgo.</p>
 </section>
 
-  <section>
-  <h2>Nuestra Misión</h2>
+<section id="quienes">
+  <h2>Quiénes somos</h2>
   <p>
-    Ayudar a las organizaciones a gestionar sus riesgos de información, cumplir regulaciones y fortalecer su seguridad 
-    de forma sostenible y alineada al negocio.
+    MACHICAO SECURITY CONSULTING es una firma especializada en Seguridad de la Información, Gestión de Riesgos y Cumplimiento Normativo.
+    Trabajamos bajo estándares internacionales ISO/IEC 27001, ISO/IEC 27002, ISO 31000, así como regulaciones locales ASFI y APS.
   </p>
-    <p>
-      <h2>Nuestra Visión</h2>
-    </p>
-    <p>
-      Ser un referente en gobernanza y seguridad de la información, reconocido por la confianza, independencia y calidad 
-      profesional de nuestros servicios.
-    </p>
-  </section>
-  
-<section>
-  
+  <p>
+    Nuestro enfoque combina visión ejecutiva, rigor técnico y recomendaciones prácticas. Acompañamos a empresas del sector financiero, asegurador y corporativo, actuando como socios estratégicos en seguridad, no solo como proveedores.
+  </p>
+
+  <h3>Misión</h3>
+  <p>Ayudar a las organizaciones a gestionar sus riesgos de información, cumplir regulaciones y fortalecer su seguridad de forma sostenible y alineada al negocio.</p>
+
+  <h3>Visión</h3>
+  <p>Ser un referente en gobernanza y seguridad de la información, reconocido por la confianza, independencia y calidad profesional de nuestros servicios.</p>
+</section>
+
+<section id="servicios">
   <h2>Servicios</h2>
-  <p>
-  <h2>MACHICAO SECURITY CONSULTING</h2>
-  </p>
-  <p>
-  <h2>Gobernanza, Riesgos, Cumplimiento y Seguridad de la Información</h2>
-  </p>
-  <p>
-  Ayudamos a organizaciones a proteger su información crítica, cumplir regulaciones y tomar decisiones basadas en riesgo, alineadas a estándares internacionales.
-  </p>
-  <div class="servicio">
-    <h3>Consultoría en Seguridad de la Información</h3>
-    <p>Diagnósticos, auditorías y acompañamiento estratégico basado en ISO/IEC 27001 y 27002.</p>
-  </div>
+  <div class="cards">
 
-  <div class="servicio">
-    <h3>🔐 CISO as a Service & Gobernanza de Seguridad</h3>
-    <p>Dirección estratégica de Seguridad de la Información sin necesidad de un CISO interno a tiempo completo.</p>
-    <p>Qué hacemos:</p>
-    <lista>
-    - Gobierno del SGSI bajo ISO/IEC 27001 y 27002
-    - Gestión de riesgos con ISO 31000
-    - Reportes ejecutivos a Gerencia y Directorio
-    - Definición de estrategias, políticas y prioridades
-    - Acompañamiento continuo y toma de decisiones basada en riesgo
-    👉 Ideal para empresas que necesitan liderazgo en seguridad con visión ejecutiva.
-    </lista>
+    <div class="card">
+      <h3>Consultoría en Seguridad de la Información</h3>
+      <p>Diagnósticos, auditorías y acompañamiento estratégico basado en ISO/IEC 27001 y 27002.</p>
     </div>
-  <div class="sevicio">
-    <h3>📋 Auditorías, Implementación y Cumplimiento Normativo</h3>
-    <p>Servicios especializados para diagnóstico, auditoría e implementación de controles de seguridad 
-      y cumplimiento.</p>
-    <p>Cobertura:</p>
-    <lista>
-    - Auditorías ISO 27001 / 27002
-    - Evaluación de madurez del SGSI
-    - Implementación y mejora de controles
-    - Cumplimiento regulatorio ASFI y APS
-    - Preparación para auditorías internas, externas y regulatorias
-    👉 Enfoque práctico, basado en evidencia y alineado al negocio.
-    </lista>
+
+    <div class="card">
+      <h3>CISO as a Service & Gobernanza</h3>
+      <p>Dirección estratégica de Seguridad de la Información sin necesidad de un CISO interno a tiempo completo.</p>
+      <ul>
+        <li>Gobierno del SGSI bajo ISO/IEC 27001 y 27002</li>
+        <li>Gestión de riesgos con ISO 31000</li>
+        <li>Reportes ejecutivos a Gerencia y Directorio</li>
+        <li>Definición de estrategias, políticas y prioridades</li>
+        <li>Acompañamiento continuo y toma de decisiones basada en riesgo</li>
+      </ul>
     </div>
-  
-<div class="servicio">  
-  <h3>🛡️ Ethical Hacking & Seguridad Informática</h3>
-    <p>Evaluamos la seguridad real de sus sistemas antes de que lo haga un atacante.</p>
-    <p>Servicios:</p>
-    <lista>
-    - Ethical Hacking / Pentesting
-    - Evaluación de vulnerabilidades
-    - Análisis de riesgos tecnológicos
-    - Revisión de configuraciones de seguridad
-    - Recomendaciones técnicas y estratégicas
-    👉 Identificamos brechas reales y fortalecemos su postura de seguridad.
-    </lista>
-</div>
- 
-  <div class="servicio">
-  <h3>🎓 Capacitación Profesional y Empresarial</h3>
-    <p>Formación especializada para empresas y profesionales del rubro tecnológico y de seguridad.</p>
-    <p>Capacitaciones en:</p>
-    <lista>
-    - Seguridad de la Información (ISO 27001 / 27002)
-    - Gestión de Riesgos (ISO 31000)
-    - Concientización en ciberseguridad
-    - Preparación para auditorías y cumplimiento normativo
-    👉 Capacitación práctica, aplicada y alineada al entorno real de trabajo.
-    </lista>
-  </div>
 
-  <div class="servicio">
-    <h3>🔒 Confidencialidad e Independencia</h3>
-    <p>Trabajamos bajo estrictos principios de confidencialidad, ética e independencia profesional.</p>
-    <lista>
-    - Cero conflictos de interés entre clientes
-    - Proyectos totalmente independientes
-    - Información tratada como confidencial
-    - Enfoque objetivo, imparcial y profesional
-    </lista>
-  </div>
+    <div class="card">
+      <h3>Auditorías & Cumplimiento Normativo</h3>
+      <ul>
+        <li>Auditorías ISO 27001 / 27002</li>
+        <li>Evaluación de madurez del SGSI</li>
+        <li>Implementación y mejora de controles</li>
+        <li>Cumplimiento regulatorio ASFI y APS</li>
+        <li>Preparación para auditorías internas, externas y regulatorias</li>
+      </ul>
+    </div>
 
-<section>
+    <div class="card">
+      <h3>Ethical Hacking & Seguridad Informática</h3>
+      <ul>
+        <li>Ethical Hacking / Pentesting</li>
+        <li>Evaluación de vulnerabilidades</li>
+        <li>Análisis de riesgos tecnológicos</li>
+        <li>Revisión de configuraciones de seguridad</li>
+        <li>Recomendaciones técnicas y estratégicas</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Capacitación Profesional</h3>
+      <ul>
+        <li>Seguridad de la Información (ISO 27001 / 27002)</li>
+        <li>Gestión de Riesgos (ISO 31000)</li>
+        <li>Concientización en ciberseguridad</li>
+        <li>Preparación para auditorías y cumplimiento normativo</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Confidencialidad e Independencia</h3>
+      <ul>
+        <li>Cero conflictos de interés</li>
+        <li>Proyectos totalmente independientes</li>
+        <li>Información tratada como confidencial</li>
+        <li>Enfoque objetivo e imparcial</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<section id="contacto" class="contact">
   <h2>Contacto</h2>
   <p><strong>Email:</strong> contacto@machicaosecurity.online</p>
   <p><strong>WhatsApp:</strong> +591 735 500 39</p>
+  <a href="mailto:contacto@machicaosecurity.online">Escríbenos</a>
 </section>
 
 <footer>
   © 2026 Machicao Security Consulting · Todos los derechos reservados
 </footer>
 
+<a href="https://wa.me/59173550039" class="whatsapp" target="_blank">📲</a>
+
 </body>
 </html>
-

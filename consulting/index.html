@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Machicao Security Consulting</title>
+<link rel="icon" href="logo.png">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: 'Roboto', sans-serif; line-height:1.7; background:#f4f6f8; color:#222; }
+
+  /* Cabecera */
+  header {
+    background:#000;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:20px 40px;
+    flex-wrap:wrap;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+  }
+  header img { height:90px; } /* logo más grande */
+  nav { display:flex; gap:25px; flex-wrap:wrap; }
+  nav a {
+    color:white; text-decoration:none; font-weight:700; font-size:1.1em;
+    padding:8px 15px; border-radius:5px; transition:0.3s;
+  }
+  nav a:hover { background:#1e3a5f; }
+
+  /* Hero */
+  .hero {
+    text-align:center; padding:120px 20px; background:#e8eef7;
+  }
+  .hero h1 { font-size:3.2em; color:#0b1f3a; font-weight:700; margin-bottom:20px; }
+  .hero p { font-size:1.3em; max-width:900px; margin:auto; color:#333; margin-bottom:40px; }
+  .hero a.cta {
+    display:inline-block; background:#0b1f3a; color:white; padding:18px 50px;
+    font-weight:700; font-size:1.2em; border-radius:8px; text-decoration:none;
+    transition:0.3s;
+  }
+  .hero a.cta:hover { background:#1e3a5f; transform:scale(1.05); }
+
+  /* Secciones */
+  section { padding:80px 20px; max-width:1200px; margin:auto; }
+  h2 { text-align:center; color:#0b1f3a; font-weight:700; margin-bottom:50px; font-size:2.2em; }
+
+  /* Cards servicios */
+  .cards { display:flex; flex-wrap:wrap; gap:30px; justify-content:center; }
+  .card {
+    background:white; padding:30px; border-radius:15px; width:360px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.1); transition:0.5s;
+    display:flex; flex-direction:column;
+  }
+  .card:hover { transform:translateY(-10px); box-shadow:0 15px 35px rgba(0,0,0,0.15); }
+  .card h3 { color:#0b1f3a; font-weight:700; margin-bottom:15px; font-size:1.35em; }
+  .card ul { list-style:disc inside; margin-top:10px; line-height:1.5; }
+  .card li { margin-bottom:10px; }
+
+  /* Contacto */
+  .contact { text-align:center; }
+  .contact a.contact-btn {
+    display:inline-block; margin-top:25px; background:#0b1f3a; color:white;
+    padding:15px 40px; border-radius:8px; text-decoration:none; font-weight:700;
+    font-size:1.2em; transition:0.3s;
+  }
+  .contact a.contact-btn:hover { background:#1e3a5f; transform:scale(1.05); }
+
+  footer { background:#0b1f3a; color:white; text-align:center; padding:30px; font-size:14px; }
+
+  /* WhatsApp flotante */
+  .whatsapp {
+    position:fixed; bottom:25px; right:25px;
+    background:#25d366; color:white; border-radius:50%;
+    width:70px; height:70px; display:flex; align-items:center; justify-content:center;
+    font-size:35px; text-decoration:none; box-shadow:0 6px 15px rgba(0,0,0,0.3); z-index:100;
+  }
+  .whatsapp:hover { transform:scale(1.1); }
+
+  /* Negritas */
+  .highlight { font-weight:700; color:#0b1f3a; }
+
+  /* Responsivo */
+  @media(max-width:768px){
+    .cards { flex-direction:column; align-items:center; }
+    header { justify-content:center; gap:15px; }
+    .hero h1 { font-size:2.4em; }
+    .hero a.cta { padding:15px 35px; font-size:1.1em; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <img src="logo.png" alt="Machicao Security Consulting">
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#quienes">Quiénes somos</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+</header>
+
+<section class="hero" id="inicio">
+  <h1>MACHICAO SECURITY CONSULTING</h1>
+  <p><span class="highlight">Operado por BoliviaCyberSecurity Corporation</span><br>Gobernanza · Ciberseguridad · Protección Digital</p>
+  <a href="#contacto" class="cta">Contáctanos</a>
+</section>
+
+<section id="quienes">
+  <h2>Quiénes somos</h2>
+  <p><span class="highlight">MACHICAO SECURITY CONSULTING</span> es una firma especializada en <strong>Seguridad de la Información</strong>, <strong>Gestión de Riesgos</strong> y <strong>Cumplimiento Normativo</strong>, trabajando bajo estándares internacionales <strong>ISO/IEC 27001, ISO/IEC 27002, ISO 31000</strong> y regulaciones locales ASFI y APS.</p>
+  <p>Nuestro enfoque combina <strong>visión ejecutiva, rigor técnico y recomendaciones prácticas</strong>. Acompañamos a empresas del sector financiero, asegurador y corporativo como <strong>socios estratégicos</strong> en seguridad, no solo como proveedores.</p>
+
+  <h3>Misión</h3>
+  <p><strong>Ayudar a las organizaciones a gestionar sus riesgos de información, cumplir regulaciones y fortalecer su seguridad de forma sostenible y alineada al negocio.</strong></p>
+
+  <h3>Visión</h3>
+  <p><strong>Ser un referente en gobernanza y seguridad de la información, reconocido por la confianza, independencia y calidad profesional de nuestros servicios.</strong></p>
+</section>
+
+<section id="servicios">
+  <h2>Servicios</h2>
+  <div class="cards">
+
+    <div class="card">
+      <h3>Consultoría en Seguridad de la Información</h3>
+      <p><strong>Diagnósticos, auditorías y acompañamiento estratégico</strong> basado en ISO/IEC 27001 y 27002.</p>
+    </div>
+
+    <div class="card">
+      <h3>CISO as a Service & Gobernanza</h3>
+      <ul>
+        <li><strong>Gobierno del SGSI</strong> bajo ISO/IEC 27001 y 27002</li>
+        <li><strong>Gestión de riesgos</strong> con ISO 31000</li>
+        <li>Reportes ejecutivos a Gerencia y Directorio</li>
+        <li>Definición de estrategias, políticas y prioridades</li>
+        <li>Acompañamiento continuo y <strong>toma de decisiones basada en riesgo</strong></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Auditorías & Cumplimiento Normativo</h3>
+      <ul>
+        <li>Auditorías ISO 27001 / 27002</li>
+        <li>Evaluación de madurez del SGSI</li>
+        <li>Implementación y mejora de controles</li>
+        <li>Cumplimiento regulatorio ASFI y APS</li>
+        <li>Preparación para auditorías internas, externas y regulatorias</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Ethical Hacking & Seguridad Informática</h3>
+      <ul>
+        <li>Ethical Hacking / Pentesting</li>
+        <li>Evaluación de vulnerabilidades</li>
+        <li>Análisis de riesgos tecnológicos</li>
+        <li>Revisión de configuraciones de seguridad</li>
+        <li>Recomendaciones técnicas y estratégicas</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Capacitación Profesional</h3>
+      <ul>
+        <li>Seguridad de la Información (ISO 27001 / 27002)</li>
+        <li>Gestión de Riesgos (ISO 31000)</li>
+        <li>Concientización en ciberseguridad</li>
+        <li>Preparación para auditorías y cumplimiento normativo</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Confidencialidad e Independencia</h3>
+      <ul>
+        <li>Cero conflictos de interés</li>
+        <li>Proyectos totalmente independientes</li>
+        <li>Información tratada como confidencial</li>
+        <li>Enfoque objetivo e imparcial</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<section id="contacto" class="contact">
+  <h2>Contacto</h2>
+  <p><strong>Email:</strong> contacto@machicaosecurity.online</p>
+  <p><strong>WhatsApp:</strong> +591 735 500 39</p>
+  <a href="mailto:contacto@machicaosecurity.online" class="contact-btn">Escríbenos</a>
+</section>
+
+<footer>
+  © 2026 Machicao Security Consulting · Todos los derechos reservados
+</footer>
+
+<a href="https://wa.me/59173550039" class="whatsapp" target="_blank">📲</a>
+
+</body>
+</html>

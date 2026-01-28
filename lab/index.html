@@ -177,6 +177,69 @@
         margin-top:10px;
       }
     }
+    /* ===== QUIÉNES SOMOS – LAB ===== */
+
+.lab-about {
+  background:#ffffff;
+  padding:100px 20px;
+}
+
+.lab-about-wrapper {
+  max-width:820px;
+  margin:auto;
+}
+
+.lab-about-intro p {
+  font-size:1.15em;
+  line-height:1.9;
+  color:#2b2b2b;
+  margin-bottom:30px;
+  padding-left:25px;
+  border-left:4px solid #0b1f3a;
+}
+
+.lab-about-title {
+  font-size:1.05em;
+  font-weight:700;
+  letter-spacing:2px;
+  color:#0b1f3a;
+  text-transform:uppercase;
+  margin:60px 0 30px;
+}
+
+.lab-about-cards {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:35px;
+}
+
+.lab-about-card {
+  background:#f6f8fb;
+  padding:40px;
+  border-radius:14px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.lab-about-card h3 {
+  color:#0b1f3a;
+  font-size:1.4em;
+  margin-bottom:20px;
+}
+
+.lab-about-card p {
+  font-size:1.05em;
+  line-height:1.8;
+  color:#333;
+}
+
+@media(max-width:768px){
+  .lab-about-cards {
+    grid-template-columns:1fr;
+  }
+  .lab-about-intro p {
+    padding-left:15px;
+  }
+}
   </style>
 </head>
 
@@ -201,19 +264,53 @@
   </p>
 </section>
 
-<section id="quienes">
-  <h2>Quiénes somos</h2>
-  <p>
-    <span class="highlight">Machicao Security Lab</span> es la unidad educativa de
-    <strong>Machicao Security Group</strong>, dedicada a la
-    <strong>concientización y capacitación en ciberseguridad</strong> para
-    colegios, universidades e instituciones educativas.
-  </p>
-  <p>
-    Nuestro enfoque busca fortalecer la <strong>cultura digital segura</strong>,
-    promoviendo el uso responsable de la tecnología y la prevención de riesgos
-    digitales desde edades tempranas hasta nivel universitario.
-  </p>
+<section id="quienes" class="lab-about">
+  <div class="lab-about-wrapper">
+
+    <h2>Quiénes somos</h2>
+
+    <div class="lab-about-intro">
+      <p>
+        <span class="highlight">Machicao Security Lab</span> es la unidad educativa
+        de <strong>Machicao Security Group</strong>, dedicada a la
+        <strong>concientización y capacitación en ciberseguridad</strong>
+        para colegios, universidades e instituciones educativas.
+      </p>
+
+      <p>
+        Nuestro enfoque busca fortalecer una
+        <strong>cultura digital segura</strong>, promoviendo el uso responsable
+        de la tecnología y la prevención de riesgos digitales desde
+        <strong>edades tempranas hasta nivel universitario</strong>.
+      </p>
+    </div>
+
+    <div class="lab-about-title">
+      Enfoque Educativo
+    </div>
+
+    <div class="lab-about-cards">
+      <div class="lab-about-card">
+        <h3>Formación Preventiva</h3>
+        <p>
+          Diseñamos programas educativos dinámicos, adaptados por nivel
+          académico, orientados a prevenir riesgos digitales, fomentar
+          buenas prácticas y crear conciencia desde edades tempranas.
+        </p>
+      </div>
+
+      <div class="lab-about-card">
+        <h3>Impacto Social</h3>
+        <p>
+          Complementamos nuestras capacitaciones presenciales con
+          <strong>contenido educativo gratuito</strong> en redes sociales,
+          ampliando el alcance y contribuyendo a una sociedad
+          más informada y digitalmente responsable.
+        </p>
+      </div>
+    </div>
+
+  </div>
 </section>
 
 <section id="programas">
@@ -287,6 +384,7 @@
 
 </body>
 </html>
+
 
 
 

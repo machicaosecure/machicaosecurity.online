@@ -16,7 +16,7 @@
       line-height:1.7;
     }
 
-    /* Header */
+    /* HEADER */
     header {
       background:#000;
       color:#fff;
@@ -27,7 +27,9 @@
       flex-wrap:wrap;
     }
 
-    header img { height:80px; }
+    header img {
+      height:80px;
+    }
 
     nav a {
       color:#fff;
@@ -37,9 +39,11 @@
       font-size:1.05em;
     }
 
-    nav a:hover { color:#1e3a5f; }
+    nav a:hover {
+      color:#1e3a5f;
+    }
 
-    /* Hero */
+    /* HERO */
     .hero {
       background:#e8eef7;
       padding:100px 20px;
@@ -50,6 +54,7 @@
       font-size:3em;
       color:#0b1f3a;
       margin-bottom:20px;
+      font-weight:700;
     }
 
     .hero p {
@@ -78,12 +83,17 @@
       margin-bottom:15px;
     }
 
+    p {
+      font-size:1.05em;
+      margin-bottom:15px;
+    }
+
     .highlight {
       font-weight:700;
       color:#0b1f3a;
     }
 
-    /* Cards */
+    /* CARDS */
     .cards {
       display:flex;
       gap:25px;
@@ -110,9 +120,11 @@
       margin-top:10px;
     }
 
-    .card li { margin-bottom:8px; }
+    .card li {
+      margin-bottom:8px;
+    }
 
-    /* Impacto social */
+    /* IMPACTO SOCIAL */
     .impacto {
       background:#dbe6f2;
       border-radius:12px;
@@ -126,7 +138,7 @@
       margin:auto;
     }
 
-    /* Contacto */
+    /* CONTACTO */
     .contact {
       text-align:center;
     }
@@ -143,7 +155,9 @@
       font-size:1.1em;
     }
 
-    .contact a:hover { background:#1e3a5f; }
+    .contact a:hover {
+      background:#1e3a5f;
+    }
 
     footer {
       background:#0b1f3a;
@@ -153,10 +167,15 @@
       font-size:14px;
     }
 
-    /* Responsive */
+    /* RESPONSIVE */
     @media(max-width:768px){
-      header { justify-content:center; gap:15px; }
-      nav { margin-top:10px; }
+      header {
+        justify-content:center;
+        gap:15px;
+      }
+      nav {
+        margin-top:10px;
+      }
     }
   </style>
 </head>
@@ -177,4 +196,97 @@
 <section class="hero">
   <h1>MACHICAO SECURITY LAB</h1>
   <p>
-    Educación · Concientización · C
+    Educación · Concientización · Cultura Digital Segura<br>
+    <span class="highlight">Formando ciudadanos digitales responsables</span>
+  </p>
+</section>
+
+<section id="quienes">
+  <h2>Quiénes somos</h2>
+  <p>
+    <span class="highlight">Machicao Security Lab</span> es la unidad educativa de
+    <strong>Machicao Security Group</strong>, dedicada a la
+    <strong>concientización y capacitación en ciberseguridad</strong> para
+    colegios, universidades e instituciones educativas.
+  </p>
+  <p>
+    Nuestro enfoque busca fortalecer la <strong>cultura digital segura</strong>,
+    promoviendo el uso responsable de la tecnología y la prevención de riesgos
+    digitales desde edades tempranas hasta nivel universitario.
+  </p>
+</section>
+
+<section id="programas">
+  <h2>Programas Educativos</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>🏫 Colegios</h3>
+      <ul>
+        <li>Uso seguro de internet y redes sociales</li>
+        <li>Prevención del ciberacoso</li>
+        <li>Protección de datos personales</li>
+        <li>Concientización para padres y docentes</li>
+        <li>Charlas dinámicas y adaptadas por nivel</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>🎓 Universidades</h3>
+      <ul>
+        <li>Introducción a la ciberseguridad</li>
+        <li>Riesgos digitales actuales</li>
+        <li>Buenas prácticas profesionales</li>
+        <li>Concientización en normas ISO</li>
+        <li>Preparación para el entorno laboral</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>📚 Instituciones Educativas</h3>
+      <ul>
+        <li>Programas personalizados</li>
+        <li>Capacitación a docentes</li>
+        <li>Planes anuales de concientización</li>
+        <li>Evaluación de necesidades</li>
+        <li>Material educativo adaptado</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<section id="impacto">
+  <h2>Compromiso Social</h2>
+  <div class="impacto">
+    <p>
+      En <span class="highlight">Machicao Security Lab</span> creemos que la
+      <strong>ciberseguridad es un derecho de todos</strong>.
+      Por ello generamos contenido educativo gratuito a través de
+      <strong>redes sociales como TikTok e Instagram</strong>,
+      alcanzando a estudiantes, padres y docentes.
+    </p>
+    <p>
+      Nuestro compromiso es contribuir activamente a una
+      <strong>sociedad más informada, segura y digitalmente responsable</strong>.
+    </p>
+  </div>
+</section>
+
+<section id="contacto" class="contact">
+  <h2>Contacto</h2>
+  <p><strong>Email:</strong> contacto@machicaosecurity.online</p>
+  <p><strong>WhatsApp:</strong> +591 735 500 39</p>
+  <a href="mailto:contacto@machicaosecurity.online">Solicitar información</a>
+</section>
+
+<footer>
+  © 2026 Machicao Security Lab · Machicao Security Group · Todos los derechos reservados
+</footer>
+
+</body>
+</html>
+
+
+

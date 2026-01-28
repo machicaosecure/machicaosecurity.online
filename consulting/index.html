@@ -88,6 +88,73 @@
     .hero h1 { font-size:2.4em; }
     .hero a.cta { padding:15px 35px; font-size:1.1em; }
   }
+ /* ===== QUIÉNES SOMOS – VERSIÓN EJECUTIVA ===== */
+
+.about {
+  background:#ffffff;
+  padding:100px 20px;
+}
+
+.about-wrapper {
+  max-width:820px;
+  margin:auto;
+}
+
+.about-intro {
+  margin-bottom:60px;
+}
+
+.about-intro p {
+  font-size:1.15em;
+  line-height:1.9;
+  color:#2b2b2b;
+  margin-bottom:30px;
+  padding-left:25px;
+  border-left:4px solid #0b1f3a;
+}
+
+.about-section-title {
+  font-size:1.1em;
+  font-weight:700;
+  letter-spacing:2px;
+  color:#0b1f3a;
+  text-transform:uppercase;
+  margin-bottom:30px;
+}
+
+.about-cards {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:35px;
+}
+
+.about-card-box {
+  background:#f6f8fb;
+  padding:40px;
+  border-radius:14px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.about-card-box h3 {
+  color:#0b1f3a;
+  font-size:1.5em;
+  margin-bottom:20px;
+}
+
+.about-card-box p {
+  font-size:1.05em;
+  line-height:1.8;
+  color:#333;
+}
+
+@media(max-width:768px){
+  .about-cards {
+    grid-template-columns:1fr;
+  }
+  .about-intro p {
+    padding-left:15px;
+  }
+}
 </style>
 </head>
 <body>
@@ -108,11 +175,16 @@
   <a href="#contacto" class="cta">Contáctanos</a>
 </section>
 
-<section id="quienes" class="about">
-  <div class="about-container">
+<section id="servicios">
+  <h2>Servicios</h2>
+  <div class="cards">
+
+   <section id="quienes" class="about">
+  <div class="about-wrapper">
+
     <h2>Quiénes somos</h2>
 
-    <div class="about-card">
+    <div class="about-intro">
       <p>
         <span class="highlight">MACHICAO SECURITY CONSULTING</span> es una firma
         especializada en <strong>Seguridad de la Información</strong>,
@@ -130,36 +202,34 @@
         como <strong>socios estratégicos en seguridad</strong>, no solo como
         proveedores.
       </p>
+    </div>
 
-      <div class="about-divider"></div>
+    <div class="about-section-title">
+      Nuestra razón de ser
+    </div>
 
-      <div class="about-grid">
-        <div class="about-box">
-          <h3>Misión</h3>
-          <p>
-            Ayudar a las organizaciones a gestionar sus riesgos de información,
-            cumplir regulaciones y fortalecer su seguridad de forma sostenible
-            y alineada al negocio.
-          </p>
-        </div>
-
-        <div class="about-box">
-          <h3>Visión</h3>
-          <p>
-            Ser un referente en gobernanza y seguridad de la información,
-            reconocido por la confianza, independencia y calidad profesional
-            de nuestros servicios.
-          </p>
-        </div>
+    <div class="about-cards">
+      <div class="about-card-box">
+        <h3>Misión</h3>
+        <p>
+          Ayudar a las organizaciones a gestionar sus riesgos de información,
+          cumplir regulaciones y fortalecer su seguridad de forma sostenible
+          y alineada al negocio.
+        </p>
       </div>
 
+      <div class="about-card-box">
+        <h3>Visión</h3>
+        <p>
+          Ser un referente en gobernanza y seguridad de la información,
+          reconocido por la confianza, independencia y calidad profesional
+          de nuestros servicios.
+        </p>
+      </div>
     </div>
+
   </div>
 </section>
-
-<section id="servicios">
-  <h2>Servicios</h2>
-  <div class="cards">
 
     <div class="card">
       <h3>Consultoría en Seguridad de la Información</h3>
@@ -237,5 +307,6 @@
 
 </body>
 </html>
+
 
 
